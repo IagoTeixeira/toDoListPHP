@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 10%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > h2{
+    color: white;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.telaDoMeio{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+    padding-top: 10%;
+}
+
+.boxText{
+    width: 30%;
+    padding-left: 16px;
+}
+
+#toDoText{
+    outline: none;
+    border: 1px solid rgba(148, 118, 146, 0.507);
+    width: 70%;
+    height: 26px;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.boxText > button{
+    width: 20%;
+    height: 28px ;
+    background-color: aqua;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.boxText > button:hover{
+    cursor: pointer;
+}
+
+#boxList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    border: 1px solid rgba(0, 0, 0, 0.363);
+    height: 300px;
+    border-radius: 20px;
+    padding: 16px;
+    margin-top: 20px;
+}
+
+#boxList > ol {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+#boxList > ol > li {
+    list-style: none;
+    width: 90%;
+    background-color: aqua;
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#boxList > ol > li:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 999px){
+    .boxText, #boxList{
+        width: 90%;
+    }
+    
+    header > h2 {
+        font-size: 30px;
+    }
+}
